@@ -1,0 +1,21 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: MyNewPass
+    url: jdbc:mysql://8.129.15.139:3306/MIND_MAP?characterEncoding=utf-8
+  thymeleaf:
+    prefix: classpath:/templates/
+  devtools:
+    restart:
+      enabled: true
+  resources:
+    static-locations: classpath:/static/
+
+server:
+  servlet:
+    context-path: /mindmap
+mybatis:
+  type-aliases-package: com.yyds.demo.profession.mapper
+  mapper-locations: classpath:mapping/*.xml
